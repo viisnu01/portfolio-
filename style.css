@@ -1,5 +1,5 @@
 
-body { font-family: Arial, sans-serif; background-color: #0b0f12; color: #dfeff2; }
+body { font-family: Arial, sans-serif; background-color: #0b0f12; color: #dfeff2; margin: 0; }
 .wrap { max-width: 1100px; margin: auto; padding: 20px; }
 .site-header { background: #071426; padding: 10px 0; color: #07d5c7; }
 .nav a { color: #cfeff0; margin-left: 15px; text-decoration: none; }
@@ -14,6 +14,6 @@ body { font-family: Arial, sans-serif; background-color: #0b0f12; color: #dfeff2
 .profile-photo { width: 200px; border-radius: 12px; }
 .skills { display: grid; grid-template-columns: repeat(auto-fit,minmax(150px,1fr)); gap: 10px; list-style: none; padding: 0; }
 .skills li { background: #071419; padding: 8px; border-radius: 6px; text-align: center; }
-.media-placeholder { max-width: 100%; border-radius: 8px; background: #071419; display: flex; align-items: center; justify-content: center; }
+.media-placeholder { max-width: 100%; border-radius: 8px; background: #071419; display: flex; align-items: center; justify-content: center; min-height: 150px; color: #888; }
 .site-footer { background: #071426; padding: 20px; text-align: center; }
 .site-footer a { color: #07d5c7; text-decoration: none; }
