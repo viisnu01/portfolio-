@@ -1,11 +1,15 @@
-// small helpers - nothing fancy
-document.addEventListener('DOMContentLoaded', function(){
-  // add smooth scrolling for internal links
-  document.querySelectorAll('a[href^="#"]').forEach(function(a){
-    a.addEventListener('click', function(e){
-      e.preventDefault();
-      var target = document.querySelector(this.getAttribute('href'));
-      if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
-    });
+
+window.addEventListener('scroll', () => {
+  const links = document.querySelectorAll('.nav-link');
+  let fromTop = window.scrollY + 100;
+  links.forEach(link => {
+    if(link.hash){
+      let section = document.querySelector(link.hash);
+      if(section && section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop){
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    }
   });
 });
