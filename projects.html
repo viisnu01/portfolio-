@@ -84,34 +84,38 @@
         <section class="projects-section">
             <h1 class="section-title">My Projects</h1>
 
-            <!-- Project 1 -->
-            <div class="project-card">
-                <div class="media-placeholder">VIDEO/IMAGE PLACEHOLDER</div>
-                <div class="project-text">
-                    <h2>Smart India Hackathon 2024</h2>
-                    <p>Designed a real-time signal classification system for DVB-S2X waveforms.</p>
-                </div>
-                <div class="project-details">
-                    <p>The objective focuses on implementing an algorithm for Automatic Modulation Recognition of DVB-S2X waveforms.</p>
-                    <p><strong>Proposed solution :</strong></p>
-                    <p>A custom GNU Radio algorithm incorporates a machine learning model, enabling real-time analysis of DVB-S2X signals through an Embedded Python Block.</p>
-                    <p>Employing Software Defined Radio for efficient signal reception and real-time data analysis to minimize hardware requirements.</p>
-                    <p>The developed machine learning model achieves 91% accuracy in DVB-S2X modulation recognition across a wide range of SNR, leveraging CNNs for feature extraction and LSTMs for sequence prediction.</p>
-                    <p>The solution enables scalable detection of DVB-S2X waveforms by integrating diverse modulation schemes into a streamlined algorithm, ensuring adaptability to future advancements sustainably.</p>
+<!-- Project 1 -->
+<div class="project-card">
+    <div class="media-placeholder">VIDEO/IMAGE PLACEHOLDER</div>
+    <div class="project-text">
+        <h2>Smart India Hackathon 2024</h2>
+        <p>Designed a real-time signal classification system for DVB-S2X waveforms.</p>
+    </div>
+    <div class="project-details">
+        <p>The objective focuses on implementing an algorithm for Automatic Modulation Recognition of DVB-S2X waveforms.</p>
 
-                    <p><strong>Model specifications:</strong></p>
-                    <p><strong>Data Loading & Preprocessing:</strong> CSV files are loaded and reshaped into 64x32 matrices for I and Q components. The data is split into training and test sets with categorical labels.</p>
-                    <p><strong>Model Architecture:</strong><br>
-                    - Inputs: Two inputs of shape (64, 32, 1) for I and Q.<br>
-                    - CNN Layers: Each input undergoes two convolutional layers (64 filters), followed by max-pooling, and then flattened.<br>
-                    - Concatenation: I and Q features are merged.<br>
-                    - LSTM Layer: A 256-unit LSTM processes the features.<br>
-                    - Dense Layers: Three dense layers (1024, 256, 32 units) with LeakyReLU activation and 50% dropout for regularization.<br>
-                    - Output: Softmax output layer corresponding to the number of classes.</p>
-                    <p><strong>Training:</strong> Categorical cross-entropy loss and Adam optimizer are used to train the model for 25 epochs with a batch size of 64.</p>
-                    <p><strong>Evaluation:</strong> Accuracy is evaluated based on SNR levels, and SNR vs Accuracy is plotted for visualization.</p>
-                </div>
-            </div>
+        <p><strong>Proposed solution:</strong></p>
+        <p>A custom GNU Radio algorithm incorporates a machine learning model, enabling real-time analysis of DVB-S2X signals through an Embedded Python Block.</p>
+        <p>Employing Software Defined Radio for efficient signal reception and real-time data analysis to minimize hardware requirements.</p>
+        <p>The developed machine learning model achieves 91% accuracy in DVB-S2X modulation recognition across a wide range of SNR, leveraging CNNs for feature extraction and LSTMs for sequence prediction.</p>
+        <p>The solution enables scalable detection of DVB-S2X waveforms by integrating diverse modulation schemes into a streamlined algorithm, ensuring adaptability to future advancements sustainably.</p>
+
+        <p><strong>Model specifications:</strong></p>
+        <p><strong>Data Loading & Preprocessing:</strong> CSV files are loaded and reshaped into 64x32 matrices for I and Q components. The data is split into training and test sets with categorical labels.</p>
+        
+        <p><strong>Model Architecture:</strong><br>
+        - Inputs: Two inputs of shape (64, 32, 1) for I and Q.<br>
+        - CNN Layers: Each input undergoes two convolutional layers (64 filters), followed by max-pooling, and then flattened.<br>
+        - Concatenation: I and Q features are merged.<br>
+        - LSTM Layer: A 256-unit LSTM processes the features.<br>
+        - Dense Layers: Three dense layers (1024, 256, 32 units) with LeakyReLU activation and 50% dropout for regularization.<br>
+        - Output: Softmax output layer corresponding to the number of classes.</p>
+
+        <p><strong>Training:</strong> Categorical cross-entropy loss and Adam optimizer are used to train the model for 25 epochs with a batch size of 64.</p>
+        <p><strong>Evaluation:</strong> Accuracy is evaluated based on SNR levels, and SNR vs Accuracy is plotted for visualization.</p>
+    </div>
+</div>
+
 
             <!-- Project 2 -->
             <div class="project-card">
