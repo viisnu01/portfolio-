@@ -1,40 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viisnu Anand S - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <base href="/portfolio-/">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Viisnu Anand S — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <script src="script.js" defer></script>
 </head>
 <body>
-
-<header>
-    <nav>
-        <div class="logo">Viisnu Anand S</div>
-        <div class="nav-links">
-            <a href="/" class="active">Home</a>
-            <a href="/about.html">About</a>
-            <a href="/projects.html">Projects</a>
-            <a href="/Resume.pdf" target="_blank">Resume</a>
-        </div>
-    </nav>
-</header>
-
-<main>
-    <!-- Your existing home page content -->
-</main>
-
-<footer class="site-footer">
-    <div class="wrap">
-        <div class="contact">
-            <div>📞 +91 9443742244</div>
-            <div>✉️ <a href="mailto:viisnuanand.s@gmail.com">viisnuanand.s@gmail.com</a></div>
-            <div><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/viisnu-anand" target="_blank">linkedin.com/in/viisnu-anand</a></div>
-        </div>
-        <div class="copyright">© 2025 Viisnu Anand S. All Rights Reserved.</div>
+  <header class="site-header">
+    <div class="wrap nav-wrap">
+      <div class="brand">Viisnu Anand S</div>
+      <nav class="nav">
+        <a href="https://viisnu01.github.io/portfolio-/" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="Resume.pdf" class="nav-link" download>Resume</a>
+      </nav>
     </div>
-</footer>
+  </header>
 
+  <main>
+    <section class="hero full-screen">
+      <div class="hero-inner">
+        <h1>Hi, I'm <span class="accent">Viisnu Anand S</span></h1>
+        <p class="subtitle">Electronics & Communication Engineer | Robotics & Drones Enthusiast</p>
+        <a class="btn" href="about.html">Explore More</a>
+      </div>
+    </section>
+
+    <section class="preview-projects wrap">
+      <h2>Projects</h2>
+      <div class="cards">
+        <article class="card" onclick="location.href='projects.html#p1'">
+          <h3>Smart India Hackathon 2024</h3>
+          <p>AI-Powered DVB-S2X Signal Detection & Classification.</p>
+        </article>
+        <article class="card" onclick="location.href='projects.html#p2'">
+          <h3>IRoCu 2025</h3>
+          <p>Autonomous UAV Navigation with SLAM and LiDAR.</p>
+        </article>
+        <article class="card" onclick="location.href='projects.html#p3'">
+          <h3>Internship – PRICOL Limited</h3>
+          <p>Low-cost wire color sequence detection system.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="contact">
+        <div>📞 +91 9443742244</div>
+        <div>✉️ <a href="mailto:viisnuanand.s@gmail.com">viisnuanand.s@gmail.com</a> | <a href="mailto:viisnuanand.22ec@kct.ac.in">viisnuanand.22ec@kct.ac.in</a></div>
+        <div><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/viisnu-anand" target="_blank">linkedin.com/in/viisnu-anand</a></div>
+      </div>
+      <div class="copyright">© 2025 Viisnu Anand S. All Rights Reserved.</div>
+    </div>
+  </footer>
 </body>
 </html>
